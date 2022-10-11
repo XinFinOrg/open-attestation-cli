@@ -38,6 +38,8 @@ npx -p @govtechsg/open-attestation-cli open-attestation <arguments>
 | ropsten | 3        | Test       |
 | rinkeby | 4        | Test       |
 | goerli  | 5        | Test       |
+| xdc     | 50       | Production |
+| apothem | 51       | Test       |
 | polygon | 137      | Production |
 | mumbai  | 80001    | Test       |
 

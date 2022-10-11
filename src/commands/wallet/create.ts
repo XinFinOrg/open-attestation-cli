@@ -22,7 +22,7 @@ export const builder = (yargs: Argv): Argv =>
     .option("fund", {
       description: "Automatically add funds for the specified network",
       type: "string",
-      choices: ["ropsten"],
+      choices: ["ropsten","apothem"],
     });
 
 export const handler = async (args: CreateWalletCommand): Promise<void> => {

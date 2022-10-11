@@ -36,6 +36,19 @@ export const create = async ({
       );
     }
   }
+  else if (fund === "apothem") {
+    const response = await fetch(`https://faucet.openattestation.com/donate/${wallet.address}`).then((res) =>
+      res.json()
+    );
+    if (response.message) {
+      signale.warn(`[apothem] Adding fund to ${wallet.address} failed: ${response.message}`);
+    } else {
+      signale.info(
+        `[apothem] Request to add funds into ${wallet.address} sent. Please wait a while before the funds being added into your wallet. You can check the transaction at https://apothem.blocksscan.io/tx/${response.txhash}`
+      );
+      signale.info(`Find more details at ${getEtherscanAddress({ network: "apothem" })}/address/${wallet.address}`);
+    }
+  }
   signale.info(`Wallet with public address ${highlight(wallet.address)} successfully created.`);
   signale.info(`Find more details at ${getEtherscanAddress({ network: "ropsten" })}/address/${wallet.address}`);
 
