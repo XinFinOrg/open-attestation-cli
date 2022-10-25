@@ -37,7 +37,7 @@ export const create = async ({
     }
   }
   else if (fund === "apothem") {
-    const response = await fetch(`https://faucet.openattestation.com/donate/${wallet.address}`).then((res) =>
+    const response = await fetch(`https://faucet.apothem.network/donate/${wallet.address}`).then((res) =>
       res.json()
     );
     if (response.message) {
