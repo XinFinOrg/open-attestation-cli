@@ -12,10 +12,10 @@ enum NetworkCmdName {
   Rinkeby = "rinkeby",
   Goerli = "goerli",
   Sepolia = "sepolia",
-  XDC = "xdc",
-  Apothem = "apothem",
   Polygon = "polygon",
   Mumbai = "mumbai",
+  XDC = "xdc",
+  Apothem = "apothem",
 }
 
 const defaultInfuraProvider =
