@@ -19,7 +19,6 @@ export enum NetworkCmdName {
   Maticmum = "maticmum",
   XDC = "xdc",
   XDCApothem = "xdcapothem",
-
 }
 
 const defaultInfuraProvider =
@@ -76,7 +75,8 @@ export const supportedNetwork: {
     networkId: 80001,
     networkName: "maticmum",
     currency: "MATIC",
-  },[NetworkCmdName.XDC]: {
+  },
+  [NetworkCmdName.XDC]: {
     explorer: "https://xdcscan.io",
     provider: jsonRpcProvider("https://erpc.xinfin.network"),
     networkId: 50,
